@@ -56,7 +56,7 @@ body{
 
 header{
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 nav{
@@ -105,7 +105,7 @@ nav{
 }
 
 .calculator{
-    border: var(--corTexto) solid;
+    border: var(--corTerciaria) solid;
     width: 30rem;
     height: 40rem;
     display: flex;
@@ -132,7 +132,7 @@ nav{
     font-size: 1.2rem;
 }
 
-.inputs input[type=text]{
+.inputs input[type="text"]{
     background-color: var(--corDetalhes);
     border: none;
     padding: 0.4rem 0.8rem;
@@ -160,7 +160,7 @@ button{
     background-color: transparent;
     border: var(--corDetalhes2) solid 1px;
     color: var(--corDetalhes2);
-    width: 8rem;
+    width: 10rem;
     padding: 1rem 2rem;
     font-weight: bold;
     cursor: pointer;
@@ -185,52 +185,23 @@ button:active{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     header{
-        display: flex;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
     
     nav{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
         padding: 0 2rem;
         gap: 1rem;
     }
 
-    .logo{
-        width: 8rem;
-    }
-    
     .contatosContainer{
-        display: flex;
         width: 5.5rem;
     }
-    
-    .contatos{
-        width: 2rem;
-        transition: scale 0.1s ease-in-out;
-    }
 
-    .calculatorContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-    }
-    
     .calculator{
-        border: var(--corTerciaria) solid;
         width: 20rem;
-        height: 42rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        height: 45rem;
         gap: 0.8rem;
-        border-radius: 20px;
         box-shadow: none;
-        padding: 2rem;
     }
     
     .calculator h1{
@@ -243,26 +214,19 @@ button:active{
         color: var(--corTexto2);
         display: flex;
         flex-direction: column;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     
     .inputs input[type=text]{
-        background-color: var(--corDetalhes);
-        border: none;
-        padding: 0.4rem 0.8rem;
-        border-radius: 20px;
-        outline: none;
         width: 15rem;
-        color: var(--corTexto2);
     }
 
     .radio {
-        color: var(--corTexto2);
-        margin: 0 2rem;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-around;
-        width: 10rem;
+        width: 15rem;
+    }
+
+    button{
+        margin-top: 1rem;
     }
 
     #blob1{
