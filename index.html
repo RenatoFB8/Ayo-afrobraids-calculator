@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayo Afro Braids</title>
+    <meta property="og:title" content="Ayo Afro Braids">
+    <meta property="og:image"
+        content="https://scontent-for1-1.cdninstagram.com/v/t51.2885-15/391050693_176993005449783_6216153969393364101_n.webp?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMDgweDEwODAuc2RyIn0&_nc_ht=scontent-for1-1.cdninstagram.com&_nc_cat=103&_nc_ohc=ELDxwcX-lM8AX86lQNN&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzIxMjY5MjUyNTQxMTg2MTgwMQ%3D%3D.2-ccb7-5&oh=00_AfC3O54guATDbjcaSPwjx4x4_iZK6i7xujNiwAGLa_1ywA&oe=65C2E3BC&_nc_sid=ee9879">
+    <meta property="og:url" content="https://renatofb8.github.io/Ayo-afrobraids-calculator/">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imgs/ayo-icon.jpg" type="image/x-icon">
+    <script src="index.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logoContainer">
+                <img class="logo" src="./imgs/ayo-logo.jpg" alt="Ayo Logo">
+            </div>
+            <div class="contatosContainer">
+                <a href="https://www.instagram.com/ayo.afrobraids/" target="_blank" rel="noopener noreferrer">
+                    <img class="contatos" src="./imgs/instagram-icon.svg" id="instagram">
+                </a>
+                <a href="https://wa.me/message/HOGH7WAUZMQZO1" target="_blank" rel="noopener noreferrer">
+                    <img class="contatos" src="./imgs/whatsapp-icon.svg" id="whatsapp">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="blob1"></div>
+        <div id="blob2"></div>
+        <section class="calculatorContainer">
+            <div class="calculator">
+                <h1>Braids Calculator!</h1>
+
+                <div class="inputs">
+                    <label for="small-braids">Small braids</label>
+                    <input type="text" id="small-braids" placeholder="Amount of Small Braids">
+                </div>
+
+                <div class="inputs">
+                    <label for="medium-braids">Medium braids</label>
+                    <input type="text" id="medium-braids" placeholder="Amount of Medium Braids">
+                </div>
+
+                <div class="inputs">
+                    <label for="large-braids">Large braids</label>
+                    <input type="text" id="large-braids" placeholder="Amount of Large Braids">
+                </div>
+
+                <div class="inputs">
+                    <label for="bubbles">Bubbles</label>
+                    <input type="text" id="bubbles" placeholder="Amount of Bubbles">
+                </div>
+
+                <div class="inputs">
+                    <label for="jumbo">Jumbo Pieces</label>
+                    <input type="text" id="jumbo" placeholder="Amount of Jumbo Pieces">
+                </div>
+
+                <div class="inputs">
+                    <label for="extra">Extra Value/Decoration/Etc</label>
+                    <input type="text" id="extra" placeholder="Extra value $$">
+                </div>
+
+                <label class="inputs">Product usage</label>
+                <div class="radio">
+                    <div>
+                        <input type="radio" value="normalUse" name="produtos" checked>
+                        <label for="normalUse">Normal</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="highUse" name="produtos">
+                        <label for="highUse">High</label>
+                    </div>
+                </div>
+
+                <button>Calculate</button>
+
+                <h3 id="price-result"></h3>
+                <h3 id="time-result"></h3>
+            </div>
+        </section>
+
+        <div id="blob3"></div>
+    </main>
+
+</body>
+
+</html>
