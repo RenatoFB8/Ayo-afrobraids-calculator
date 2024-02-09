@@ -2,7 +2,7 @@ const calculateButton = document.querySelector("button")
 const priceResult = document.querySelector("#price-result")
 const timeResult = document.querySelector("#time-result")
 
-const inputs = document.querySelectorAll("input")
+const inputs = document.querySelectorAll("input[type='text']")
 
 inputs.forEach(input => input.addEventListener("input", function () {
     this.value = this.value.replace(/[^0-9]/g, '');
@@ -21,10 +21,11 @@ calculateButton.addEventListener("click", function () {
         return
     }
 
+    const productUsage = getRadioValue()
 
-    const productUsage = Array.from(document.querySelectorAll('[name="produtos"]')).find(product => product.checked).value;
+    console.log(productUsage);
 
-    const productUsagePrice = productUsage === "normalUse" ? 10 : 15
+    const productUsagePrice = productUsage === "lowUse" ? 10 : productUsage === "mediumUse"? 15 : 30
 
     const minute = (smallBraids * 12.5) + (mediumBraids * 15) + (largeBraids * 30) + (bubbles * 15) + (jumboPiece * 15)
 
@@ -40,7 +41,7 @@ calculateButton.addEventListener("click", function () {
     console.log("Horas:", hour);
     console.log("Preço da hora", hourPrice);
 
-    const price = (smallBraids * 1.5) + (mediumBraids * 3) + (largeBraids * 5) + (bubbles * 3) + (jumboPiece * 5) + hourPrice + productUsagePrice + extraValue
+    const price = (smallBraids * 1.5) + (mediumBraids * 3) + (largeBraids * 5) + (bubbles * 3) + (jumboPiece * 7.5) + hourPrice + productUsagePrice + extraValue
 
     console.log("Preço", price);
 
@@ -48,6 +49,10 @@ calculateButton.addEventListener("click", function () {
     timeResult.textContent = `Hours of work: ${Math.floor(hour)}H${minute.toFixed(0) - Math.floor(hour) * 60}M`
 
 })
+
+function getRadioValue() {
+    return Array.from(document.querySelectorAll('[name="produtos"]')).find(product => product.checked).value;
+}
 
 function roundHour(num) {
     var int = Math.floor(num);

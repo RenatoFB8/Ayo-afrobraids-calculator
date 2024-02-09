@@ -55,14 +55,15 @@
                 </div>
 
                 <div class="inputs">
+                    <label for="jumbo">Jumbo Pieces</label>
+                    <input type="text" id="jumbo" placeholder="Amount of Jumbo Pieces">
+                </div>
+
+                <div class="inputs">
                     <label for="bubbles">Bubbles</label>
                     <input type="text" id="bubbles" placeholder="Amount of Bubbles">
                 </div>
 
-                <div class="inputs">
-                    <label for="jumbo">Jumbo Pieces</label>
-                    <input type="text" id="jumbo" placeholder="Amount of Jumbo Pieces">
-                </div>
 
                 <div class="inputs">
                     <label for="extra">Extra Value</label>
@@ -72,8 +73,12 @@
                 <label class="inputs">Product usage</label>
                 <div class="radio">
                     <div>
-                        <input type="radio" value="normalUse" name="produtos" checked>
-                        <label for="normalUse">Normal</label>
+                        <input type="radio" name="produtos" value="lowUse" checked>
+                        <label for="lowUse">Low</label>
+                    </div>
+                    <div>
+                        <input type="radio" value="mediumUse" name="produtos" >
+                        <label for="mediumUse">Medium</label>
                     </div>
                     <div>
                         <input type="radio" value="highUse" name="produtos">
